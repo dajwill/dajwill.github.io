@@ -1,0 +1,125 @@
+.hidden {
+  display: none;
+}
+
+.nav-wrapper {
+  background-color: white;
+}
+
+.nav-wrapper a {
+  color: black;
+}
+
+.brand-logo{
+  margin-left: 15px;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.item {
+  padding: 0 !important;
+  margin: 0 !important;
+  position: relative;
+  /*width: 100%;*/
+  height: 100%;
+  overflow: hidden;
+
+  /*Cheating to fix bottom spacing issue*/
+  /*margin-bottom: -5px;*/
+}
+
+.info {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  /*margin: 12.5%;*/
+  /*background-color: black;
+  opacity: .4;*/
+  background: rgba(54, 25, 25, .5);
+  z-index: 1;
+}
+
+.info h3 {
+  margin-top: 10%;
+  color: white;
+  /*margin: 0 auto;*/
+}
+
+.info a {
+  margin: 12.5% auto;
+}
+/*.item:hover .info{
+  display: block;
+}*/
+
+.flipInX {
+    -webkit-animation-name: flipInX;
+    animation-name: flipInX;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+}
+
+img {
+    /*object-fit: cover;*/
+}
+
+#test {
+  position: absolute;
+  left: -50%;
+  top: -50%;
+}
+
+.thumbnail {
+  /*width: 100%;
+  height: 100%;*/
+  position: relative;
+  width: 600px;
+  height: 600px;
+
+  /*overflow: hidden;*/
+}
+.thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.thumbnail img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+.ratio{
+    position:relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 50% ; /* % of width, defines aspect ratio*/
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/*@media (min-width: 993px){
+  .projects .col {
+    margin-bottom: -5px;
+  }
+}
+
+@media (max-width: 992px ) and (min-width: 601px) {
+  .projects .col {
+    margin-bottom: -10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects .col {
+    margin-bottom: -5px;
+  }
+}*/
